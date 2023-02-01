@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Medidor de galaxias</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Medidor de Galaxias</h1>
+      <img
+        src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg"
+        class="page-logo"
+        alt=""
+      />
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img
+        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+        alt=""
+        class="alura-logo"
+      />
+      <img src="./img/nave1.png" />
+    </a>
+    <div class="form">
+      <input
+        type="text"
+        oninput="this.value = this.value.toUpperCase()"
+        class="nome"
+        id="nome"
+        autocomplete="false"
+        name="hidden"
+        placeholder="Seu nome"
+      /><br />
+      <input
+        value=""
+        onkeypress="return SomenteNumero(event)"
+        type="text"
+        id="distancia-planetas"
+        autocomplete="false"
+        name="hidden"
+        placeholder="Quanto anos-luz?"
+      /><br /><br />
+      <button id="submit_info" type="submit">Ir ao futuro</button>
+    </div>
+    <p class="typing"><result id="result"></result></p>
+
+    <footer class="footer">
+      <p>Image credits to Freepik</p>
+      <a
+        href="https://br.freepik.com/vetores-gratis/modelo-de-adesivo-com-objeto-voador-nao-identificado-ovni-isolado_18384112.htm#query=nave&position=5&from_view=search&track=sph"
+        target="_blank"
+        >1-img-center</a
+      >
+      <a
+        href="https://br.freepik.com/fotos-gratis/galaxy-noite-panoramica_13140088.htm?query=galaxia#from_view=detail_alsolike"
+        target="_blank"
+        >2-img-background</a
+      >
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
